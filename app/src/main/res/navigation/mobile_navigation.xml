@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_stocks">
+
+    <fragment
+        android:id="@+id/navigation_stocks"
+        android:name="com.example.stachura_lab6.ui.stocks.StocksFragment"
+        android:label="Portfolio"
+        tools:layout="@layout/fragment_stocks" />
+
+    <fragment
+        android:id="@+id/displayFragment"
+        android:name="com.example.stachura_lab6.ui.display.DisplayFragment"
+        android:label="Details"
+        tools:layout="@layout/display_fragment"/>
+
+    <fragment
+        android:id="@+id/navigation_Create"
+
+        android:name="com.example.stachura_lab6.ui.insert.InsertFragment"
+        android:label="Create"
+        tools:layout="@layout/fragment_insert" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.stachura_lab6.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.stachura_lab6.ui.update.UpdateFragment"
+        android:label="Update"
+        tools:layout="@layout/fragment_update" />
+
+
+</navigation>
